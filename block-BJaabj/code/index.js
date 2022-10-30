@@ -17,8 +17,8 @@ sayHello();
 function fullName() {
   let firstName = prompt("Enter your first name");
   let lastName = prompt("Enter your last name");
-  let fullName = firstName +" "+ lastName ;
-  alert(fullName);
+  let full = firstName +" "+ lastName ;
+  alert(full);
 }
 fullName();
 
@@ -89,10 +89,11 @@ isLeapYear();
 
 */
 function getFactorial() {
-  let number = Number(prompt("Enter a number for factorial : "))
-  for (i=1; i<=number; i++) {
-    let factorial = number * i;
-    alert(`The factorial of ${number} is ${factorial}`);
+  let number = Number(prompt("Enter a number for factorial : "));
+  let final = 1;
+  for (let i=number; i>=1; i--) {
+    final *= i ;
   }
+  alert(`The factorial of ${number} is ${final}`);
 }
 getFactorial();
