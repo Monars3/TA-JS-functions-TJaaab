@@ -27,7 +27,12 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers(a, b){
+  if(typeof a !== "number" || typeof b !== "number") {
+    alert("Enter Valid Input");
+  }
+  else {
   return a + b;
+  }
 }
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
@@ -41,20 +46,24 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 function calc(numA, numB, operation){
-  if (operation == "add"){
-    return numA + numB;
+  if(typeof numA !== "number" || typeof numB !== "number"){
+    alert("Enter valid input")
   }
-  else if(operation == "sub"){
-    return numA - numB;
-  }
-  else if(operation == "mul"){
-    return numA * numB;
-  }
-  else if(operation == "div"){
-    return numA / numB;
-  }
+  else {
+    switch(operation){
+      case 'add' :
+        return numA + numB;
+      case 'sub' :
+        return numA - numB;
+      case 'mul' :
+        return numA * numB;
+      case 'div' :
+        return numA/numB ;
+      default :
+        alert("Enter valid operation");
+    }
 }
-
+}
 /*
 5. Create a function named `isLeapYear` that accepts a number data type and return `true` or `false` based
 on if the year id leap year or not.
@@ -62,13 +71,10 @@ on if the year id leap year or not.
 isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
-function isLeapYear(a){
-  if (a%4 == 0){
-    return true;
-  }
-  else {
-    return false;
-  }
+function isLeapYear(year){
+  // if (year%400 === 0) return true;
+  // if (year%100 === 0) return false;
+  return year%4 === 0;
 }
 
 /*
@@ -76,7 +82,8 @@ function isLeapYear(a){
 */
 function getFactorial(a){
   let b=1;
-  for(i=1; i>=a; i--){
+  for(let i=a; i>=1; i--){
     b *= i;
   }
+  return b;
 }
