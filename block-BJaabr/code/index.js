@@ -41,19 +41,25 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function addOne(a){
+  return a+1 ;
+}
 // - Write a Function Expression
-
+let addOne = function (a){
+  return a+1;
+}
 // - Write an Arrow Function without curly brackets(if possible)
-
+let addOne = (a) => a+1;
 // - Write an Arrow Function with curly brackets
-
+let addOne = (a) => {
+  return a+1;
+}
 // - Execute the function
-
+addOne(14);
 // - Execute the function and store the return value in a variable.
-
+let value = addOne(14);
 // - What is the typeof returnValue
-
+typeof value;
 /* 2. Subtract one
 
 Write a function named `substractOne` that accepts a number, substracts one from the given value and return it. (hint: use return keyword)
