@@ -42,7 +42,7 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 function addOne(a){
-  return a+1 ;
+  return a + 1 ;
 }
 // - Write a Function Expression
 let addOne = function (a){
@@ -55,9 +55,9 @@ let addOne = (a) => {
   return a+1;
 }
 // - Execute the function
-addOne(14);
+addOne();
 // - Execute the function and store the return value in a variable.
-let value = addOne(14);
+let value = addOne();
 // - What is the typeof returnValue
 typeof value;
 /* 2. Subtract one
@@ -89,19 +89,25 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function sumTwo(numA, numB){
+  return numA + numB ;
+}
 // - Write a Function Expression
-
+let sumTwo = function (numA , numB) {
+  return numA+numB ;
+}
 // - Write an Arrow Function without curly brackets(if possible)
-
+let sumTwo = (numA, numB) => numA + numB ;
 // - Write an Arrow Function with curly brackets
-
+let sumTwo = (numA, numB) => {
+  return numA + numB ;
+}
 // - Execute the function
-
+sumTwo();
 // - Execute the function and store the return value in a variable
-
+let result = sumTwo();
 // - What is the typeof returnValue
-
+typeof sumTwo;
 /* 4. Square of the given value
 
 Write a function named `square` that accepts a number and returns the square of the number.
@@ -110,15 +116,21 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function square(p, q){
+  return p*q;
+}
 // - Write a Function Expression
-
+let square = function(p, q){
+  return p*q;
+}
 // - Write an Arrow Function without curly brackets(if possible)
-
+let square = (p,q) => p*q ;
 // - Write an Arrow Function with curly brackets
-
+let square = (p, q) => {
+  return p*q ;
+}
 // - Execute the function
-
+square();
 // - Execute the function and store the return value in a variable
 
 // - What is the typeof returnValue
@@ -131,19 +143,25 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function isGreater(x, y) {
+  return x>y;
+}
 // - Write a Function Expression
-
+let isGreater = function (x, y){
+  return x>y;
+}
 // - Write an Arrow Function without curly brackets(if possible)
-
+let isGreater = (x, y) => x>y;
 // - Write an Arrow Function with curly brackets
-
+let isGreater = (x, y) => {
+  return x>y;
+} 
 // - Execute the function
-
+isGreater();
 // - Execute the function and store the return value in a variable
-
+let greaterValue = isGreater();
 // - What is the typeof returnValue
-
+typeof isGreater;
 /* 6.
 
 Write a function named `oddOrEven` that accepts a`number` and returns
